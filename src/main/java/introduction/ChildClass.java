@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 public class ChildClass extends ParentClass {
 
     @Override
-    public Double test(Double a) throws FileNotFoundException {
+    public Double test(Double a) throws RuntimeException {
         return 2.0;
     }
 
@@ -26,7 +26,7 @@ public class ChildClass extends ParentClass {
         System.out.println("res: ");
         try {
             new ChildClass().test(3.0);
-        } catch (FileNotFoundException e) {
+        } catch (RuntimeException e) {
             e.printStackTrace();
         }
 
