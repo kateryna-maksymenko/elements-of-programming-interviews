@@ -23,7 +23,7 @@ public class IncomeCalculator {
            IncomeCalculator incomeCalculator = new IncomeCalculator();
             double[] dailyPrices = {1200.00, 100.00, 120.0, 100.0, 120.0, 500.0};
 
-           System.out.println("Best income: " + incomeCalculator.calculateBestIncome(dailyPrices));
+           System.out.println("Best income is: " + incomeCalculator.calculateBestIncome(dailyPrices));
         }
 
 }
